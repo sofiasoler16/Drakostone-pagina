@@ -69,7 +69,7 @@
       <div class="logo">🐉</div>
       <div>
         <h1>Política de privacidad</h1>
-        <div class="sub">Aplicación Drakostone · Última actualización: 30 de agosto de 2026</div>
+        <div class="sub">Aplicación Drakostone · Última actualización: 11 de septiembre de 2026</div>
       </div>
     </header>
 
@@ -98,8 +98,10 @@
         <li><strong>Calendario del dispositivo:</strong> si lo activás, la app lee los eventos de tu
           calendario para mostrarte tu semana, y puede crear/editar los eventos de los objetivos que
           vos agendás desde la app (identificados con el prefijo 🐉).</li>
-        <li><strong>Función de organización con IA:</strong> si usás "Organizá mi semana", el texto que
-          escribís se envía a nuestro proveedor de IA para generar una propuesta de objetivos y tareas.</li>
+        <li><strong>Función de organización con IA:</strong> si usás "Organizá mi semana", se envía a
+          nuestro proveedor de IA únicamente el <em>texto que escribís</em> y tus propios objetivos y
+          tareas de la app, para generar una propuesta. <strong>No enviamos a la IA los eventos de tu
+          Google Calendar ni tus datos de salud.</strong></li>
       </ul>
     </div>
 
@@ -134,11 +136,28 @@
       <li><strong>Supabase</strong> (base de datos y autenticación): almacena tu cuenta y tu contenido
         de forma segura.</li>
       <li><strong>Anthropic</strong> (proveedor de IA): recibe el texto que escribís en la función
-        "Organizá mi semana" para generar la propuesta. No le enviamos tus datos de salud.</li>
-      <li><strong>Google</strong> (Google Calendar): solo si conectás tu cuenta de Google, para leer y
-        crear los eventos de tus objetivos.</li>
+        "Organizá mi semana" junto con tus objetivos y tareas propios, para generar la propuesta.
+        <strong>No le enviamos los eventos de tu Google Calendar ni tus datos de salud.</strong></li>
+      <li><strong>Google</strong> (Google Calendar): solo si conectás tu cuenta de Google, para leer los
+        eventos de tu semana y crear/editar los eventos de los objetivos que agendás desde la app.</li>
     </ul>
     <p>No vendemos ni alquilamos tu información personal a nadie.</p>
+
+    <div class="destacado">
+      <strong>Uso limitado de los datos de Google (Limited Use).</strong> El uso que Drakostone hace de la
+      información recibida de las APIs de Google se ajusta a la
+      <a href="https://developers.google.com/terms/api-services-user-data-policy">Política de Datos de
+      Usuario de los Servicios de las API de Google</a>, incluidos los requisitos de Uso Limitado. En
+      particular, Drakostone <strong>no transfiere los datos de Google Workspace (Google Calendar) a
+      modelos de inteligencia artificial de terceros ni los usa para entrenarlos</strong>. Los datos de tu
+      calendario se usan únicamente en tu dispositivo, para mostrarte tu semana y avisarte de
+      superposiciones de horario.
+      <br /><br />
+      <em>Drakostone's use of information received from Google APIs will adhere to the
+      <a href="https://developers.google.com/terms/api-services-user-data-policy">Google API Services User
+      Data Policy</a>, including the Limited Use requirements. Drakostone does not transfer Google Workspace
+      data to third-party artificial intelligence models, nor use it to train them.</em>
+    </div>
 
     <h2>5. Dónde se almacena y seguridad</h2>
     <p>
