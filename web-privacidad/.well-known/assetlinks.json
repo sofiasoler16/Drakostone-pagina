@@ -1,0 +1,13 @@
+[
+  {
+    "relation": ["delegate_permission/common.handle_all_urls"],
+    "target": {
+      "namespace": "android_app",
+      "package_name": "com.sofiasoler.drakostone",
+      "sha256_cert_fingerprints": [
+        "20:55:98:A3:7B:F8:BB:8C:89:85:E9:79:ED:B8:E7:A9:83:9D:C3:4F:5C:91:EF:FB:36:0C:37:60:69:FE:61:5F",
+        "D6:44:A9:30:BF:B0:9A:86:B2:1B:66:8E:95:4E:CF:FE:A6:36:20:62:4C:82:AB:FE:BA:9D:83:FB:3C:31:2D:7A"
+      ]
+    }
+  }
+]
