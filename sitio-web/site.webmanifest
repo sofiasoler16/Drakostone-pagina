@@ -1,0 +1,11 @@
+{
+  "name": "Drakostone",
+  "short_name": "Drakostone",
+  "icons": [
+    { "src": "/imagenes/logo/favicon-192.png", "sizes": "192x192", "type": "image/png" },
+    { "src": "/imagenes/logo/icono-512.png", "sizes": "512x512", "type": "image/png" }
+  ],
+  "theme_color": "#6c4cd6",
+  "background_color": "#f6f4fb",
+  "display": "browser"
+}

@@ -16,6 +16,7 @@ sitio-web/
   .well-known/assetlinks.json → Hace que los links /unirse abran la app en Android
   estilos/                    → base.css (compartido) + un archivo por página
   scripts/                    → comun.js (compartido) + un archivo por página
+  favicon.ico, site.webmanifest → ícono de la pestaña y de Google
   imagenes/                   → logo/, capturas/, dragones/, compartir/ (vista previa en WhatsApp)
   vercel.json, robots.txt, sitemap.xml
 ```
