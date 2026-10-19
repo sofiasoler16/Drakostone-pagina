@@ -1,0 +1,51 @@
+/* =========================================================
+   UNIRSE A UN GRUPO — estilos de /unirse
+   ========================================================= */
+
+.unirse {
+  min-height: 100vh; min-height: 100dvh; display: grid; place-items: center; align-content: center; gap: 18px;
+  padding: 28px 16px calc(28px + env(safe-area-inset-bottom)); position: relative; overflow: hidden; isolation: isolate;
+}
+.burbuja { position: absolute; border-radius: 50%; filter: blur(50px); opacity: .6; z-index: -1; }
+.b1 { width: 320px; height: 320px; background: #d9cff5; top: -100px; right: -120px; }
+.b2 { width: 280px; height: 280px; background: #c9efe0; bottom: -100px; left: -120px; }
+
+.tarjeta-invitacion {
+  width: 100%; max-width: 440px; text-align: center; background: var(--card); border: 1px solid var(--borde);
+  border-radius: 28px; padding: 18px 22px 26px; box-shadow: var(--sombra);
+  animation: aparecer-tarjeta .6s cubic-bezier(.2, .8, .2, 1);
+}
+@keyframes aparecer-tarjeta { from { opacity: 0; transform: translateY(24px) scale(.97); } to { opacity: 1; transform: none; } }
+
+.dragon-invitacion { position: relative; width: 150px; margin: -4px auto 4px; }
+.dragon-invitacion img { width: 150px; height: auto; animation: flotar 4s ease-in-out infinite; filter: drop-shadow(0 12px 16px rgba(76, 51, 143, .18)); }
+.destello { position: absolute; font-style: normal; color: var(--violeta); animation: brillar 2.4s ease-in-out infinite; }
+.destello.d1 { top: 10%; left: -8%; font-size: 20px; }
+.destello.d2 { top: 30%; right: -10%; color: var(--menta); font-size: 26px; animation-delay: .9s; }
+
+.tarjeta-invitacion h1 { font-size: 30px; margin: 0 0 4px; }
+.bajada { color: var(--texto-suave); margin: 0 0 14px; }
+
+.codigo-box p { margin: 0; color: var(--texto-suave); font-size: 14px; font-weight: 700; }
+.codigo {
+  display: inline-flex; align-items: center; gap: 10px; margin: 8px 0 2px; padding: 12px 20px; cursor: pointer;
+  background: var(--violeta-claro); border: 2px dashed var(--violeta-borde); border-radius: 16px;
+  font-family: var(--fuente-titulos); font-size: 28px; font-weight: 800; letter-spacing: 4px; color: var(--violeta-oscuro);
+  transition: transform .2s, border-color .2s;
+}
+.codigo::after { content: "⧉"; font-size: 18px; letter-spacing: 0; opacity: .6; }
+.codigo:hover { border-color: var(--violeta); }
+.codigo:active { transform: scale(.96); }
+.copiado { display: block; min-height: 22px; font-size: 14px; font-weight: 800; color: #2f7d62; }
+
+.acciones { display: grid; gap: 10px; margin: 10px 0 18px; }
+.acciones .btn { width: 100%; }
+.acciones [hidden] { display: none; }
+
+.pasos-unirse { list-style: none; padding: 0; margin: 0 0 14px; display: grid; gap: 8px; text-align: left; }
+.pasos-unirse li { display: flex; gap: 12px; align-items: flex-start; background: var(--fondo); border-radius: 14px; padding: 10px 12px; font-size: 15px; color: var(--texto-suave); }
+.pasos-unirse b { flex: none; width: 24px; height: 24px; border-radius: 50%; display: grid; place-items: center; background: var(--violeta); color: #fff; font-size: 13px; }
+
+.chico { font-size: 13px; color: var(--texto-suave); margin: 0; }
+.volver { font-weight: 800; text-decoration: none; }
+.volver:hover { text-decoration: underline; }

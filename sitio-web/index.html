@@ -1,0 +1,372 @@
+<!doctype html>
+<!-- =========================================================
+     INICIO — página principal / presentación de la app
+     URL: https://drakostone.solersofia.com/
+     ⚠️ Google OAuth: esta página tiene que seguir explicando
+     qué hace la app y enlazar a /politica-privacidad.
+     ========================================================= -->
+<html lang="es" class="sin-js">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <!-- Verificación del dominio en Google (no borrar) -->
+  <meta name="google-site-verification" content="zCehTvq2MhBCtSct25BCSEQ_j6NI48nWLERjBt-p2VQ" />
+  <title>Drakostone — Objetivos, hábitos y tareas con tu dragón</title>
+  <meta name="description" content="Drakostone te ayuda a planificar, cumplir y medir tus objetivos, hábitos y tareas, con un dragón que crece con vos." />
+  <meta name="theme-color" content="#f6f4fb" />
+  <link rel="canonical" href="https://drakostone.solersofia.com/" />
+
+  <!-- Vista previa al compartir el link (WhatsApp, Instagram, etc.) -->
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="Drakostone" />
+  <meta property="og:locale" content="es_AR" />
+  <meta property="og:url" content="https://drakostone.solersofia.com/" />
+  <meta property="og:title" content="Drakostone — Objetivos, hábitos y tareas con tu dragón" />
+  <meta property="og:description" content="Planificá, hacé y medí tus objetivos con un dragón que crece con vos." />
+  <meta property="og:image" content="https://drakostone.solersofia.com/imagenes/compartir/drakostone-compartir.jpg" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta name="twitter:card" content="summary_large_image" />
+
+  <link rel="icon" type="image/png" href="/imagenes/logo/favicon.png" />
+  <link rel="apple-touch-icon" href="/imagenes/logo/apple-touch-icon.png" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@600;700;800&family=Nunito:wght@400;600;700;800&display=swap" />
+  <link rel="stylesheet" href="/estilos/base.css" />
+  <link rel="stylesheet" href="/estilos/inicio.css" />
+  <link rel="preload" as="image" href="/imagenes/dragones/original-festejo.webp" />
+  <script>document.documentElement.classList.remove('sin-js');</script>
+</head>
+<body>
+  <a class="saltar" href="#contenido">Saltar al contenido</a>
+
+  <!-- ===== Encabezado ===== -->
+  <header class="encabezado" id="encabezado">
+    <div class="contenedor">
+      <a class="marca" href="/" aria-label="Drakostone, inicio">
+        <img src="/imagenes/logo/logo-drakostone.webp" alt="" width="38" height="38" />
+        Drakostone
+      </a>
+      <nav class="menu" aria-label="Secciones">
+        <a href="#como-funciona">Cómo funciona</a>
+        <a href="#funciones">Funciones</a>
+        <a href="#capturas">Capturas</a>
+        <a href="#dragones">Dragones</a>
+        <a href="#preguntas">Preguntas</a>
+      </nav>
+      <a class="btn btn-primario btn-descarga-header" href="https://play.google.com/store/apps/details?id=com.sofiasoler.drakostone">Descargar</a>
+      <button class="boton-menu" id="boton-menu" aria-label="Abrir menú" aria-expanded="false" aria-controls="menu-movil"><span></span></button>
+    </div>
+  </header>
+  <nav class="menu-movil" id="menu-movil" aria-label="Secciones">
+    <a href="#como-funciona">Cómo funciona</a>
+    <a href="#funciones">Funciones</a>
+    <a href="#capturas">Capturas</a>
+    <a href="#dragones">Dragones</a>
+    <a href="#preguntas">Preguntas</a>
+    <a class="btn btn-primario" href="https://play.google.com/store/apps/details?id=com.sofiasoler.drakostone">Descargar en Google Play</a>
+  </nav>
+
+  <main id="contenido">
+
+    <!-- ===== Portada ===== -->
+    <section class="portada">
+      <div class="fondo-burbujas" aria-hidden="true"><span></span><span></span><span></span></div>
+      <div class="contenedor portada-grid">
+        <div class="portada-texto">
+          <p class="etiqueta aparecer">🐉 App de objetivos y hábitos</p>
+          <h1 class="aparecer" data-retraso="1">Cumplí tus objetivos con un <span class="resaltado">dragón</span> que crece con vos</h1>
+          <p class="bajada aparecer" data-retraso="2">
+            Definís qué querés cumplir, la app arma qué tenés que hacer hoy, y a partir de lo que cumplís ves tu progreso.
+          </p>
+          <div class="ciclo aparecer" data-retraso="3" aria-label="Planificá, hacé, medí">
+            <span>Planificá</span><i aria-hidden="true">→</i><span>Hacé</span><i aria-hidden="true">→</i><span>Medí</span>
+          </div>
+          <div class="botones aparecer" data-retraso="4">
+            <a class="btn btn-primario" href="https://play.google.com/store/apps/details?id=com.sofiasoler.drakostone">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M4.6 2.3c-.3.3-.5.8-.5 1.4v16.6c0 .6.2 1.1.5 1.4l.1.1 9.3-9.3v-.2L4.7 2.2l-.1.1Zm12.5 12.4-3.1-3.1v-.2l3.1-3.1.1.1 3.7 2.1c1 .6 1 1.6 0 2.2l-3.7 2.1-.1-.1Zm-.1.1L13.9 11.7 4.6 21c.3.4.9.4 1.6 0l10.8-6.2M17 8.6 6.2 2.4c-.7-.4-1.3-.4-1.6 0l9.3 9.3L17 8.6Z"/></svg>
+              Descargar en Google Play
+            </a>
+            <a class="btn btn-secundario" href="#como-funciona">Ver cómo funciona</a>
+          </div>
+        </div>
+
+        <div class="portada-dragon aparecer" data-retraso="2">
+          <div class="halo" aria-hidden="true"></div>
+          <i class="destello d1" aria-hidden="true">✦</i><i class="destello d2" aria-hidden="true">✦</i><i class="destello d3" aria-hidden="true">✦</i>
+          <button class="dragon-boton" id="dragon" aria-label="Tocá al dragón">
+            <img id="dragon-img" src="/imagenes/dragones/original-festejo.webp" alt="El dragón de Drakostone festejando" width="520" height="520" />
+          </button>
+          <div class="globo" id="globo" aria-live="polite">¡Hola! Tocame 👋</div>
+          <div class="mini-tarjeta" aria-hidden="true">
+            <small>Hoy</small>
+            <strong><span id="contador-portada">0</span>%</strong>
+            <div class="barra"><div class="barra-relleno" id="barra-portada"></div></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Cómo funciona (demo interactiva) ===== -->
+    <section class="seccion" id="como-funciona">
+      <div class="contenedor">
+        <div class="titulo-seccion aparecer">
+          <p class="etiqueta">Cómo funciona</p>
+          <h2>Tres pasos, todos los días</h2>
+          <p>Tocá cada paso para ver qué hace la app.</p>
+        </div>
+
+        <div class="pasos aparecer" role="tablist" aria-label="Pasos">
+          <button role="tab" id="tab-planifica" aria-controls="panel-planifica" aria-selected="true" class="paso activo"><b>1</b> Planificá</button>
+          <button role="tab" id="tab-hace" aria-controls="panel-hace" aria-selected="false" class="paso" tabindex="-1"><b>2</b> Hacé</button>
+          <button role="tab" id="tab-medi" aria-controls="panel-medi" aria-selected="false" class="paso" tabindex="-1"><b>3</b> Medí</button>
+        </div>
+
+        <div class="demo aparecer">
+          <!-- Paso 1 -->
+          <div class="panel activo" role="tabpanel" id="panel-planifica" aria-labelledby="tab-planifica">
+            <div class="panel-texto">
+              <h3>Definí qué querés cumplir</h3>
+              <p>Creá objetivos y hábitos diarios, para ciertos días de la semana o “X veces por semana”. Pueden ser de sí/no, de cantidad (pasos, vasos de agua) o de tiempo.</p>
+              <ul class="lista-check">
+                <li>Elegí ícono, categoría y horario</li>
+                <li>Sumá tareas con fecha y prioridad</li>
+                <li>O pedile a la IA que organice tu semana ✨</li>
+              </ul>
+            </div>
+            <div class="telefono">
+              <div class="tel-pantalla">
+                <div class="tel-titulo">🎯 Objetivos</div>
+                <div class="tel-item"><span class="ico">🏋️</span><div><b>Ir al gimnasio</b><small>Lun, Mié, Vie</small></div></div>
+                <div class="tel-item"><span class="ico">💧</span><div><b>Tomar agua</b><small>Todos los días · 2000 ml</small></div></div>
+                <div class="tel-item"><span class="ico">📚</span><div><b>Leer</b><small>3 veces por semana · 30 min</small></div></div>
+                <div class="tel-item"><span class="ico">👟</span><div><b>Pasos</b><small>Todos los días · 8000</small></div></div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Paso 2: se puede tocar -->
+          <div class="panel" role="tabpanel" id="panel-hace" aria-labelledby="tab-hace" hidden>
+            <div class="panel-texto">
+              <h3>La app arma tu día</h3>
+              <p>La pantalla <b>Hoy</b> te muestra solo lo que toca hoy. Marcás lo que vas cumpliendo y tu dragón reacciona.</p>
+              <p class="pista">👉 Probalo: tocá los objetivos del celular.</p>
+            </div>
+            <div class="telefono">
+              <div class="tel-pantalla">
+                <div class="tel-hero">
+                  <img id="demo-dragon" src="/imagenes/dragones/original-animo.webp" alt="" width="80" height="80" loading="lazy" />
+                  <div>
+                    <small id="demo-mensaje">¡Arranquemos el día!</small>
+                    <strong><span id="demo-porcentaje">0</span>%</strong>
+                    <div class="barra"><div class="barra-relleno" id="demo-barra"></div></div>
+                  </div>
+                </div>
+                <div class="tel-titulo">☀️ Hoy</div>
+                <button class="tel-check" aria-pressed="false"><span class="caja"></span>Ir al gimnasio</button>
+                <button class="tel-check" aria-pressed="false"><span class="caja"></span>Tomar agua</button>
+                <button class="tel-check" aria-pressed="false"><span class="caja"></span>Leer 30 minutos</button>
+                <button class="tel-check" aria-pressed="false"><span class="caja"></span>Estudiar para el examen</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Paso 3 -->
+          <div class="panel" role="tabpanel" id="panel-medi" aria-labelledby="tab-medi" hidden>
+            <div class="panel-texto">
+              <h3>Mirá tu progreso real</h3>
+              <p>Estadísticas de constancia, rachas y por categoría, calculadas a partir de lo que realmente cumpliste. Ganás experiencia y monedas para desbloquear dragones.</p>
+              <ul class="lista-check">
+                <li>Constancia semanal y comparación con la semana anterior</li>
+                <li>Calendario mensual y grilla de todo el año</li>
+                <li>Rachas 🔥 y logros 🏆</li>
+              </ul>
+            </div>
+            <div class="telefono">
+              <div class="tel-pantalla">
+                <div class="tel-titulo">📊 Esta semana</div>
+                <div class="tel-grande"><strong>78%</strong><small>de constancia</small></div>
+                <div class="grafico" aria-label="Progreso por día">
+                  <div style="--v:90%"><i></i><span>L</span></div>
+                  <div style="--v:70%"><i></i><span>M</span></div>
+                  <div style="--v:100%"><i></i><span>M</span></div>
+                  <div style="--v:55%"><i></i><span>J</span></div>
+                  <div style="--v:85%"><i></i><span>V</span></div>
+                  <div style="--v:40%"><i></i><span>S</span></div>
+                  <div style="--v:20%"><i></i><span>D</span></div>
+                </div>
+                <div class="tel-fila"><span>🔥 Racha</span><b>5 días</b></div>
+                <div class="tel-fila"><span>⚡ Nivel</span><b>12</b></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Funciones ===== -->
+    <section class="seccion seccion-blanca" id="funciones">
+      <div class="contenedor">
+        <div class="titulo-seccion aparecer">
+          <p class="etiqueta">Funciones</p>
+          <h2>Todo lo que necesitás para ser constante</h2>
+        </div>
+        <div class="tarjetas">
+          <article class="tarjeta aparecer" data-retraso="1">
+            <div class="tarjeta-ico">🎯</div>
+            <h3>Objetivos y hábitos</h3>
+            <p>Diarios, por días de la semana o X veces por semana. Sí/no, cantidades o tiempo.</p>
+          </article>
+          <article class="tarjeta aparecer" data-retraso="2">
+            <div class="tarjeta-ico">📅</div>
+            <h3>Tu día, organizado</h3>
+            <p>La pantalla “Hoy” te muestra lo que toca, y podés agendar con horario y calendario.</p>
+          </article>
+          <article class="tarjeta aparecer" data-retraso="3">
+            <div class="tarjeta-ico">📊</div>
+            <h3>Progreso real</h3>
+            <p>Estadísticas de constancia, rachas y por categoría, calculadas desde lo que cumplís.</p>
+          </article>
+          <article class="tarjeta aparecer" data-retraso="1">
+            <div class="tarjeta-ico">✨</div>
+            <h3>Organizá tu semana con IA</h3>
+            <p>Contale qué querés lograr y te propone objetivos y tareas. Vos revisás y confirmás.</p>
+          </article>
+          <article class="tarjeta aparecer" data-retraso="2">
+            <div class="tarjeta-ico">👨‍👩‍👧</div>
+            <h3>Grupos</h3>
+            <p>Compartí objetivos y tareas con tu familia o amigos y mirá cómo avanza cada uno.</p>
+          </article>
+          <article class="tarjeta aparecer" data-retraso="3">
+            <div class="tarjeta-ico">👟</div>
+            <h3>Health Connect</h3>
+            <p>Tus pasos y calorías se cargan solos en tus objetivos, sin escribir nada (Android).</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Capturas (carrusel) ===== -->
+    <section class="seccion" id="capturas">
+      <div class="contenedor">
+        <div class="titulo-seccion aparecer">
+          <p class="etiqueta">Capturas</p>
+          <h2>Mirá la app por dentro</h2>
+        </div>
+      </div>
+      <div class="carrusel aparecer">
+        <button class="carrusel-flecha anterior" aria-label="Captura anterior">‹</button>
+        <div class="carrusel-pista" id="carrusel" tabindex="0" aria-label="Capturas de la app">
+          <figure><img src="/imagenes/capturas/progreso-semanal.webp" alt="Pantalla de progreso semanal" width="540" height="959" loading="lazy" /><figcaption>Progreso semanal</figcaption></figure>
+          <figure><img src="/imagenes/capturas/constancia-mensual.webp" alt="Calendario mensual de constancia" width="540" height="959" loading="lazy" /><figcaption>Evolución mes a mes</figcaption></figure>
+          <figure><img src="/imagenes/capturas/constancia-anual.webp" alt="Grillas anuales por hábito" width="540" height="959" loading="lazy" /><figcaption>Constancia anual</figcaption></figure>
+          <figure><img src="/imagenes/capturas/objetivos-en-grupo.webp" alt="Objetivos y tareas en grupo" width="540" height="959" loading="lazy" /><figcaption>Objetivos en grupo</figcaption></figure>
+          <figure><img src="/imagenes/capturas/progreso-del-grupo.webp" alt="Progreso de cada integrante del grupo" width="540" height="959" loading="lazy" /><figcaption>Progreso del grupo</figcaption></figure>
+        </div>
+        <button class="carrusel-flecha siguiente" aria-label="Captura siguiente">›</button>
+        <div class="carrusel-puntos" id="carrusel-puntos" aria-hidden="true"></div>
+      </div>
+    </section>
+
+    <!-- ===== Dragones ===== -->
+    <section class="seccion seccion-blanca" id="dragones">
+      <div class="contenedor dragones-grid">
+        <div class="aparecer">
+          <p class="etiqueta">Tu dragón</p>
+          <h2>Cada logro te acerca a un dragón nuevo</h2>
+          <p>Al cumplir ganás experiencia y monedas. Subís de nivel, desbloqueás logros y coleccionás dragones. Cada uno cambia los colores de toda la app.</p>
+          <div class="chips">
+            <span>⚡ Experiencia</span><span>🪙 Monedas</span><span>🏆 Logros</span><span>🎨 Temas</span>
+          </div>
+        </div>
+      </div>
+      <div class="desfile aparecer" aria-label="Algunos dragones de la colección">
+        <div class="desfile-pista">
+          <!-- La lista se duplica con JS para que el desfile sea infinito -->
+          <figure><img src="/imagenes/dragones/fuego.webp" alt="" width="200" height="197" loading="lazy" /><figcaption>Fuego</figcaption></figure>
+          <figure><img src="/imagenes/dragones/hielo.webp" alt="" width="200" height="198" loading="lazy" /><figcaption>Hielo</figcaption></figure>
+          <figure><img src="/imagenes/dragones/tormenta.webp" alt="" width="200" height="195" loading="lazy" /><figcaption>Tormenta</figcaption></figure>
+          <figure><img src="/imagenes/dragones/mago.webp" alt="" width="200" height="197" loading="lazy" /><figcaption>Mago</figcaption></figure>
+          <figure><img src="/imagenes/dragones/phoenix.webp" alt="" width="200" height="198" loading="lazy" /><figcaption>Fénix</figcaption></figure>
+          <figure><img src="/imagenes/dragones/samurai.webp" alt="" width="200" height="197" loading="lazy" /><figcaption>Samurái</figcaption></figure>
+          <figure><img src="/imagenes/dragones/hada.webp" alt="" width="200" height="194" loading="lazy" /><figcaption>Hada</figcaption></figure>
+          <figure><img src="/imagenes/dragones/nocturno.webp" alt="" width="200" height="199" loading="lazy" /><figcaption>Nocturno</figcaption></figure>
+          <figure><img src="/imagenes/dragones/medieval.webp" alt="" width="200" height="198" loading="lazy" /><figcaption>Caballero</figcaption></figure>
+          <figure><img src="/imagenes/dragones/princesa.webp" alt="" width="200" height="199" loading="lazy" /><figcaption>Princesa</figcaption></figure>
+          <figure><img src="/imagenes/dragones/arcoiris.webp" alt="" width="200" height="194" loading="lazy" /><figcaption>Arcoíris</figcaption></figure>
+          <figure><img src="/imagenes/dragones/programador.webp" alt="" width="199" height="200" loading="lazy" /><figcaption>Programador</figcaption></figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Preguntas frecuentes ===== -->
+    <section class="seccion" id="preguntas">
+      <div class="contenedor angosto">
+        <div class="titulo-seccion aparecer">
+          <p class="etiqueta">Preguntas</p>
+          <h2>Preguntas frecuentes</h2>
+        </div>
+        <div class="acordeon">
+          <details class="aparecer">
+            <summary>¿Drakostone es gratis?</summary>
+            <p>Sí, se descarga gratis y podés usar objetivos, tareas, la pantalla Hoy, el progreso y los dragones. Algunas funciones extra, como organizar la semana con IA, los cronómetros y los dragones premium, son parte de Drakostone Premium.</p>
+          </details>
+          <details class="aparecer">
+            <summary>¿Está disponible para iPhone?</summary>
+            <p>Por ahora Drakostone está disponible para Android en Google Play.</p>
+          </details>
+          <details class="aparecer">
+            <summary>¿Qué diferencia hay entre un objetivo y una tarea?</summary>
+            <p>Un objetivo se repite (todos los días, ciertos días o X veces por semana), como “tomar agua” o “ir al gimnasio”. Una tarea se hace una sola vez y tiene fecha, como “pagar la tarjeta”.</p>
+          </details>
+          <details class="aparecer">
+            <summary>¿Cómo me uno a un grupo?</summary>
+            <p>Abrí el link de invitación que te mandaron, o entrá a Grupos → “Unirme con un código” y escribí el código del grupo.</p>
+          </details>
+          <details class="aparecer">
+            <summary>¿Qué pasa con mis datos?</summary>
+            <p>No vendemos tus datos ni los usamos para publicidad. Podés borrar tu cuenta cuando quieras desde la app. Leé todos los detalles en la <a href="/politica-privacidad">política de privacidad</a>.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Llamado final ===== -->
+    <section class="cierre">
+      <div class="contenedor">
+        <div class="cierre-caja aparecer">
+          <img src="/imagenes/dragones/original-orgullo.webp" alt="" width="347" height="520" loading="lazy" />
+          <div>
+            <h2>Tu dragón te está esperando</h2>
+            <p>Empezá hoy: tu primer objetivo te lleva menos de un minuto.</p>
+            <a class="btn btn-primario" href="https://play.google.com/store/apps/details?id=com.sofiasoler.drakostone">Descargar en Google Play</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Botón fijo de descarga (solo celular) -->
+  <div class="descarga-fija" id="descarga-fija">
+    <a class="btn btn-primario" href="https://play.google.com/store/apps/details?id=com.sofiasoler.drakostone">Descargar gratis en Google Play</a>
+  </div>
+
+  <!-- ===== Pie ===== -->
+  <footer class="pie">
+    <div class="contenedor">
+      <a class="marca" href="/"><img src="/imagenes/logo/logo-drakostone.webp" alt="" width="32" height="32" loading="lazy" />Drakostone</a>
+      <nav aria-label="Enlaces del pie">
+        <a href="/politica-privacidad">Política de privacidad</a>
+        <a href="mailto:drakostone16044@gmail.com">drakostone16044@gmail.com</a>
+        <a href="https://play.google.com/store/apps/details?id=com.sofiasoler.drakostone">Google Play</a>
+      </nav>
+      <p>© <span class="anio">2026</span> Drakostone</p>
+    </div>
+  </footer>
+
+  <script src="/scripts/comun.js" defer></script>
+  <script src="/scripts/inicio.js" defer></script>
+</body>
+</html>
