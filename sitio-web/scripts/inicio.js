@@ -16,11 +16,11 @@
   var globo = document.getElementById('globo');
   var frases = [
     { cara: 'animo', texto: '¿Qué vamos a cumplir hoy?' },
-    { cara: 'orgullo', texto: '¡Vas muy bien! Seguí así 💪' },
-    { cara: 'festejo', texto: '¡Racha de 7 días! 🔥' },
-    { cara: 'animo', texto: 'Un pasito por día 🌱' },
-    { cara: 'orgullo', texto: 'Cada objetivo suma XP ⚡' },
-    { cara: 'festejo', texto: '¡Día perfecto! 🎉' }
+    { cara: 'orgullo', texto: '¡Vas muy bien! Seguí así' },
+    { cara: 'festejo', texto: '¡Racha de 7 días!' },
+    { cara: 'animo', texto: 'Un pasito por día' },
+    { cara: 'orgullo', texto: 'Cada objetivo suma XP' },
+    { cara: 'festejo', texto: '¡Día perfecto!' }
   ];
   var indiceFrase = 0;
   if (dragon) {
@@ -87,7 +87,7 @@
     demoPct.textContent = pct;
     demoBarra.style.width = pct + '%';
     var cara = pct === 100 ? 'festejo' : pct >= 50 ? 'orgullo' : 'animo';
-    demoMsj.textContent = pct === 100 ? '¡Día perfecto! 🎉' : pct >= 50 ? '¡Vas muy bien! 💪' : pct > 0 ? '¡Buen comienzo! 🌱' : '¡Arranquemos el día!';
+    demoMsj.textContent = pct === 100 ? '¡Día perfecto!' : pct >= 50 ? '¡Vas muy bien!' : pct > 0 ? '¡Buen comienzo!' : '¡Arranquemos el día!';
     demoDragon.src = RUTA + cara + '.webp';
     demoDragon.animate && !movimientoReducido && demoDragon.animate(
       [{ transform: 'scale(1)' }, { transform: 'scale(1.15) rotate(-6deg)' }, { transform: 'scale(1)' }],

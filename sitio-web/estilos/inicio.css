@@ -267,3 +267,7 @@
 .descarga-fija .btn { width: 100%; }
 .descarga-fija.visible { transform: none; }
 @media (min-width: 900px) { .descarga-fija { display: none; } }
+
+/* Íconos de línea (reemplazan a los emojis) */
+.icono { width: 26px; height: 26px; fill: none; stroke: var(--violeta); stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; }
+.tel-item .ico .icono { width: 22px; height: 22px; }
