@@ -17,7 +17,10 @@
     });
     botones.forEach(function (b) { b.setAttribute('aria-pressed', String(b.getAttribute('data-idioma') === idioma)); });
     document.documentElement.lang = idioma;
-    document.title = idioma === 'es' ? 'Política de privacidad — Drakostone' : 'Privacy Policy — Drakostone';
+    var raiz = document.documentElement;
+    var tEs = raiz.getAttribute('data-titulo-es') || 'Política de privacidad — Drakostone';
+    var tEn = raiz.getAttribute('data-titulo-en') || 'Privacy Policy — Drakostone';
+    document.title = idioma === 'es' ? tEs : tEn;
     if (guardar) { try { localStorage.setItem('drakostone-idioma', idioma); } catch (e) {} }
   }
 

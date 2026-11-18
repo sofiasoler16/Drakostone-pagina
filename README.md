@@ -11,6 +11,7 @@ HTML, CSS y JS puros (sin compilar). Lo publica Vercel con cada push a `main`.
 sitio-web/
   index.html                  → Inicio (presentación de la app)           /
   politica-privacidad/        → Política de privacidad EN/ES              /politica-privacidad
+  terminos/                   → Términos de servicio EN/ES (Play: trader) /terminos
   unirse/                     → Link de invitación a un grupo (?c=CODIGO)  /unirse/?c=ABC123
   404.html                    → Página "no encontrada"
   .well-known/assetlinks.json → Hace que los links /unirse abran la app en Android
